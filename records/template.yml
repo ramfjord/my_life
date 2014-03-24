@@ -1,0 +1,31 @@
+hygene:
+  brushed_teeth: 0
+  flossed: 0
+  showers: 0
+  room_cleanliness: 0.0
+
+exercise:
+  bench:      []
+  squats:     []
+  hang_clean: []
+  press:      []
+  deadlift:   []
+  pull_ups:   []
+  seated_row: []
+  push_ups:   []
+  sit_ups:    []
+  climbing:   ""
+  dance:      ""
+  biking:     ""
+  other:      ""
+
+consumption:
+  drinks: 0
+  cigs:   0
+
+development: 0
+
+boring:
+  tv:       0
+  internet: 0
+  games:    0

@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'my_life'
+
+class Runner
+  extend MyLife::System
+  extend MyLife::CreateEntries
+
+  def self.run
+    if ARGV[0] =~ /^temp(?:late)/
+      Kernel.exec "#{editor_cmd} #{MyLife::CreateEntries::TEMPLATE_PATH}"
+    else
+      date = get_date(ARGV)
+
+      ensure_file_exists(date)
+
+      Kernel.exec "#{editor_cmd} #{date_path(date)}"
+    end
+  end
+end
+
+Runner.run

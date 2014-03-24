@@ -1,0 +1,4 @@
+records/*/
+!records/template.yml
+
+*.gem
